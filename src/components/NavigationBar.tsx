@@ -1,11 +1,12 @@
-import { HStack, Image, Text } from "@chakra-ui/react";
+import { HStack, Image } from "@chakra-ui/react";
 import logo from "../assets/epic-games-logo.png";
+import ColorModeSwitch from "./ColorModeSwitch";
 
 function NavigationBar() {
   return (
-    <HStack>
+    <HStack justifyContent="space-between" padding="10px">
       <Image src={logo} boxSize="60px"></Image>
-      <Text> Nav Bar</Text>
+      <ColorModeSwitch />
     </HStack>
   );
 }
