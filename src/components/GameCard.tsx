@@ -10,7 +10,7 @@ interface properties {
 
 function GameCard({ game }: properties) {
   return (
-    <Card width="300px" borderRadius={10} overflow="hidden">
+    <Card>
       <Image src={getCroppedImageUrl(game.background_image)}></Image>
       <CardBody>
         <Heading font-size="2xl">{game.name}</Heading>
