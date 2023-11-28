@@ -6,7 +6,7 @@ interface Properties {
 function RenderCriticScore({ score }: Properties) {
   let color = score > 75 ? "green" : score > 60 ? "yellow" : "red";
   return (
-    <Badge colorScheme={color} font-size="14px" paddingX={2} borderRadius="4px">
+    <Badge colorScheme={color} fontSize="20px" paddingX={2} borderRadius="4px">
       {score}
     </Badge>
   );
