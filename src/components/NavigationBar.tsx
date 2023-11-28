@@ -3,11 +3,15 @@ import logo from "../assets/epic-games-logo.png";
 import ColorModeSwitch from "./ColorModeSwitch";
 import SearchInput from "./SearchInput";
 
-function NavigationBar() {
+interface Props {
+  onSearch: (searchText: string) => void;
+}
+
+function NavigationBar({ onSearch }: Props) {
   return (
     <HStack padding="10px">
       <Image src={logo} boxSize="60px"></Image>
-      <SearchInput></SearchInput>
+      <SearchInput onSearch={onSearch}></SearchInput>
       <ColorModeSwitch />
     </HStack>
   );
