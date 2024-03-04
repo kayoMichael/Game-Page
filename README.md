@@ -1,5 +1,5 @@
 # Game-Page
 React Game Page Styled With Chakra UI
 
-## Web Page Preview
-https://www.youtube.com/watch?v=7lKUayseJOY
+## Stacks
+[![My Skills](https://skillicons.dev/icons?i=react,typescript,css,html,=3)](https://skillicons.dev)
